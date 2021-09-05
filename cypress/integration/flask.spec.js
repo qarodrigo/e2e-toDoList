@@ -24,7 +24,7 @@ context('Testing to do list', () => {
         cy.get('.done').contains('Take a shower').should('have.css', 'color', 'rgb(187, 187, 187)')
     })
 
-    it.only('edit task in list', () => {
+    it('edit task in list', () => {
 
         cy.addTask('Eat a pizza')
         
